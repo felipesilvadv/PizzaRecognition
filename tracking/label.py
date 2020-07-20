@@ -1,3 +1,7 @@
+import pandas as pd
+
+
+
 class Label:
 
 
@@ -19,4 +23,3 @@ class Label:
         df = pd.concat(map(lambda x: x.to_df(), self.rectangulos))
         df["label"] = self.name
         return df
-    
